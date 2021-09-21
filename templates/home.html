@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Hello World!!!</h1>
+
+<h2>Hello {{name}}</h2>
+
+
+<form action="add" method="post">
+
+    <!-- it needs to be added when we use method as post. also, change it in views.py -->
+    {% csrf_token %}  
+
+    Enter first Number: <input type="text" name="number1"/><br>
+    Enter second Number: <input type="text" name="number2"/><br>
+    <input type="submit"/>
+
+</form>
+
+{% endblock %}

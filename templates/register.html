@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+
+</head>
+<body>
+    <h1>Welcome to Employee Registration page</h1><br>
+    
+    <div id="homepage">
+        <a href="/employee/homepage"><button id="home">Home</button></a>
+    </div>
+    <div class = "container">
+        
+<form action="register" method="POST">
+    
+        {% csrf_token %} 
+
+        <div color="red">
+            {% for message in messages %}
+                <h3>{{message}}</h3>
+            {% endfor%}
+        </div>
+
+            <label><b>First Name:</b></label>&nbsp;
+            <input type="text" name="first_name" placeholder="Enter FirstName"/>
+            <br><br>
+            <label><b>Last Name:</b></label>&nbsp;
+            <input type="text" name="last_name" placeholder="Enter LastName"/>
+            <br><br>
+            <label><b>User Name:</b></label>&nbsp;
+            <input type="text" name="username" placeholder="Enter Username"/>
+            <br><br>
+            <label><b>Password:</b></label>&nbsp;
+            <input type="password" name="password1" placeholder="Enter Password"/>
+            <br><br>
+            <label><b>Confirm Password:</b></label>&nbsp;
+            <input type="password" name="password2" placeholder="Enter Password"/>
+            <br><br>
+            <label><b>Email:</b></label>&nbsp;
+            <input type="email" name="email" placeholder="Enter Email"/>
+            <br><br>
+
+            <input type="submit" name="log" id="log" value="Register"/>
+
+            
+    </form>
+</div>
+</body>
+</html>

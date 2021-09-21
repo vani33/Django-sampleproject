@@ -1,0 +1,111 @@
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-color:#303233c9;  
+    font-family: 'Arial';  
+}  
+/* .form{  
+        width: 450px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background: #7a8285;  
+        border-radius: 15px ;  
+          
+}   */
+.container {
+    width: 500px;
+    overflow: hidden;
+    clear: both;
+    margin: auto;  
+    margin: 20 0 0 450px;
+}
+  
+.container input {
+    width: 150%;
+    clear: both;
+    padding: 10px;
+}
+h1,h4{  
+    text-align:center;
+     
+    color: #6e0b0b;  
+    padding: 20px;  
+    
+}  
+label{  
+    color: #0d0e0fb0;  
+    font-size: 20px;  
+    margin: auto;    
+    padding-bottom: 15px; 
+    border-radius: 25px ;
+}  
+#textfields{  
+    width: 250px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 15px;  
+}  
+#password{  
+    width: 200px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}  
+#log{  
+    width: 150px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 5px;  
+    padding-right: 7px;  
+    color:white; 
+    background-color: rgb(41, 65, 172);
+     
+  
+  
+}  
+span{  
+    color: rgb(213, 219, 223);  
+    font-size: 12px;  
+}  
+a{  
+    float: left;  
+    background-color: grey;  
+}  
+
+#signup{
+    
+    position: absolute;
+    top: 25%;
+    left: 55%;
+    background-color: rgb(41, 65, 172);
+    width: 150px;  
+    height: 30px; 
+    color:white; 
+
+}
+#signin{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    
+    background-color: rgb(41, 65, 172);
+    width: 150px;  
+    height: 30px; 
+    color:white; 
+
+}
+#home{
+    text-align:center;
+   
+    
+}
+#messages{
+    color:rgb(146, 148, 20);
+    text-align: center;
+}
